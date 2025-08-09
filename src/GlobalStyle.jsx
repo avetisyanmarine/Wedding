@@ -13,12 +13,12 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-family: ArmAllegrou;
-    src: url("src/assets/font/ArmAllegroU.ttf");
+    src: url("/font/ArmAllegroU.ttf");
     font-display: swap;
   }
   @font-face {
     font-family: "DavelAghvor";
-    src: url("src/assets/font/davel-aghvor.otf");
+    src: url("/font/davel-aghvor.otf");
     font-display: swap;
   }
   h3 {
