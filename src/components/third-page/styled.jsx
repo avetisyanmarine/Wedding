@@ -51,7 +51,7 @@ const ThirdPagePartCalendar = styled(Flexible)`
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-image: url('src/assets/vectors/heart.svg');
+            background-image: url('/vectors/heart.svg');
             background-size: cover;
         }
     }
