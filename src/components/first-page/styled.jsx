@@ -48,6 +48,10 @@ const FirstPagePartContext = styled.div`
     }
 `
 const GridDiv = styled(Flexible)`
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     div {
         flex-direction: column;
         text-align: center;
