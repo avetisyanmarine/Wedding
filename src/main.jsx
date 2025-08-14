@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import { GlobalStyle } from './GlobalStyle.jsx'
 import './index.css';
+import { preloadFonts } from './fontLoader.js';
+
+preloadFonts()
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

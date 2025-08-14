@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #F3F3F3;
   }
   @font-face {
-    font-family: ArmAllegrou;
+    font-family: 'ArmAllegrou';
     src: url("/font/ArmAllegroU.ttf");
     font-display: swap;
   }
