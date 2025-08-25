@@ -12,7 +12,7 @@ export const ThirdPage = () => {
             <Container>
                 <h2>Ծրագիր</h2>
                 <ThirdPagePartContext>
-                    <ThirdPageBlock uniqueMargin={50} ImageSrc={SvgRing} number={'12:30'} bigText="ՀԱՐՍԻ ՏՈՒՆ" smallText="Հ․Թումանյան փողոց, 42 տուն" />
+                    <ThirdPageBlock uniqueMargin={50} ImageSrc={SvgRing} number={'12:00'} bigText="ՀԱՐՍԻ ՏՈՒՆ" smallText="Հ․Թումանյան փողոց, 42 տուն" />
                     <ThirdPageBlock ImageSrc={SvgChurch} number={'14:30'} bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ" smallText="Սուրբ Հռիփսիմե եկեղեցի" />
                     <ThirdPageBlock ImageSrc={SvgRing} number={'16:00'} bigText="ՓԵՍԱՅԻ ՏՈՒՆ" smallText="Մովսես Խորենացի փողոց, 7 տուն" />
                     <ThirdPageBlock line={true} ImageSrc={SvgCouple} number={'17:30'} bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ" smallText="Արև Ռեստորանային Համալիր" />
