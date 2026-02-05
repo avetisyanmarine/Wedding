@@ -4,8 +4,17 @@ import App from './App.jsx'
 import { GlobalStyle } from './GlobalStyle.jsx'
 import './index.css';
 import { preloadFonts } from './fontLoader.js';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 preloadFonts()
+
+AOS.init({
+  duration: 1000,
+  offset: 400,
+  once: true,
+  easing: 'ease-out-cubic',
+})
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

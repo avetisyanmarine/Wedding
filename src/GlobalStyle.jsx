@@ -35,7 +35,7 @@ body {
     font-weight: 100;
   }
   h1 {
-    font-size: 47px;
+    font-size: 44px;
     font-family: ArmAllegrou;
     color: #EFEFEF;
     font-weight: 100;
