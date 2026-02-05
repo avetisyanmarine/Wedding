@@ -65,7 +65,7 @@ export const SecondPage = () => {
           data-aos="fade-up"
           data-aos-offset="400"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1200"
+          data-aos-duration="600"
           data-aos-delay="300"
         >
           Սիրելի հյուրեր
