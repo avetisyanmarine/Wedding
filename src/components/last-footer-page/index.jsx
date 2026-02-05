@@ -28,7 +28,7 @@ export const LastFooterPage = () => {
               </div>
             </div>
           </div>
-          <p>Պատրաստվել է <a href="https://www.instagram.com/avetisyaan.m/">ՈՒՍԱՆՈՂՈՒՀԻՆԵՐԻ</a> կողմից</p>
+          <p>Պատրաստվել է <a className="underline" href="https://www.instagram.com/avetisyaan.m/">ՈՒՍԱՆՈՂՈՒՀԻՆԵՐԻ</a> կողմից</p>
         </LastFooterPagePartContext>
       </Container>
     </LastFooterPagePart>
