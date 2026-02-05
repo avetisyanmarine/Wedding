@@ -1,7 +1,7 @@
 import { Container } from "../../GlobalStyle";
 import { LastFooterPagePart, LastFooterPagePartContext } from "./styled";
 import PhoneSvg from "../../assets/vectors/Phone.svg";
-import {Insta} from "../../assets/vectors/instagram.svg";
+// import {Insta} from "../../assets/vectors/instagram.svg";
 
 export const LastFooterPage = () => {
   return (
@@ -10,7 +10,7 @@ export const LastFooterPage = () => {
         <LastFooterPagePartContext>
           <div>
             <div>
-              <img loading="lazy" src={Insta} />
+              {/* <img loading="lazy" src={Insta} /> */}
               <div>
                 <p>Փեսա</p>
                 <p>Հարս</p>
