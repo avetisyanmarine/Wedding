@@ -80,9 +80,6 @@ export const SecondPage = () => {
       <img
         src={Photo2}
         className="w-full grayscale contrast-125 brightness-105"
-        data-aos="fade-left"
-        data-aos-duration="1200"
-        data-aos-delay="600"
       />
     </SecondPagePart>
   );
