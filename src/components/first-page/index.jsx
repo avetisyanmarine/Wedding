@@ -1,73 +1,32 @@
-import MainPhoto from "../../assets/image/mainPhoto.jpg"
-import { Container, Flexible } from "../../GlobalStyle"
-import { FirstPagePart, FirstPagePartContext, GridDiv } from "./styled"
-import { useEffect, useState } from "react";
+import MainPhoto from "../../assets/image/mainPhoto.jpg";
+import { Container, Flexible } from "../../GlobalStyle";
+import { FirstPagePart, FirstPagePartContext } from "./styled";
+import Srtik from "../../assets/image/srtik.png";
 
 export const FirstPage = () => {
-    const weddingDate = new Date(2025, 8, 19, 12, 30, 0);
-
-    const calculateTimeLeft = () => {
-        const now = new Date();
-        const diff = weddingDate - now;
-
-        if (diff <= 0) {
-            return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-        }
-
-        return {
-            days: Math.floor(diff / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
-            minutes: Math.floor((diff / (1000 * 60)) % 60),
-            seconds: Math.floor((diff / 1000) % 60),
-        };
-    };
-
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setTimeLeft(calculateTimeLeft());
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    const formatNumber = (num) => String(num).padStart(2, "0");
-
-    return (
-        <FirstPagePart>
-            <img src={MainPhoto} />
-            <Container>
-                <FirstPagePartContext>
-                    <h2>հարսանյաց <br /> հրավեր</h2>
-                    <Flexible className="uniqueDiv">
-                        <h1>Անդո</h1>
-                        <p className="text-[89px]">&</p>
-                        <h1 className="uniqueH1">Ռոզա</h1>
-                    </Flexible>
-                    <div className="w-full absolute bottom-9">
-                        <h2 className="uniqueH2">Մնաց</h2>
-                        <GridDiv>
-                            <Flexible>
-                                <h2>{formatNumber(timeLeft.days)}</h2>
-                                <p>Օր</p>
-                            </Flexible>
-                            <Flexible>
-                                <h2>{formatNumber(timeLeft.hours)}</h2>
-                                <p>Ժամ</p>
-                            </Flexible>
-                            <Flexible>
-                                <h2>{formatNumber(timeLeft.minutes)}</h2>
-                                <p>Րոպե</p>
-                            </Flexible>
-                            <Flexible className="uniqueBorder">
-                                <h2>{formatNumber(timeLeft.seconds)}</h2>
-                                <p>Վայրկյան</p>
-                            </Flexible>
-                        </GridDiv>
-                    </div>
-                </FirstPagePartContext>
-            </Container>
-        </FirstPagePart>
-    )
-}
+  return (
+    <FirstPagePart>
+      <img className="grayscale contrast-125 brightness-105" src={MainPhoto} />
+      <Container>
+        <FirstPagePartContext>
+          <div className="mt-5 text-[#efefef]">
+            <h2>Հարսանյաց</h2>
+            <h2 className="ml-35 mt-2">հրավեր</h2>
+          </div>
+          <Flexible>
+            <h1
+              className="absolute bottom-38"
+              style={{
+                fontWeight: 600,
+                textShadow: "2px 2px 6px rgba(0,0,0,0.7)",
+              }}
+            >
+              Գևորգ & Սյուզաննա
+            </h1>
+            <img src={Srtik} className="absolute bottom-10" />
+          </Flexible>
+        </FirstPagePartContext>
+      </Container>
+    </FirstPagePart>
+  );
+};

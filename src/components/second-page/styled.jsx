@@ -1,31 +1,28 @@
 import styled from "styled-components";
+import { Flexible } from "../../GlobalStyle";
 
 const SecondPagePart = styled.div`
-    div {
-        text-align: center;
+  div {
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+  }
+`;
+
+const GridDiv = styled(Flexible)`
+  div {
+    flex-direction: column;
+    text-align: center;
+    border-right: 2px solid #1e1e1e;
+    padding: 4px 20px;
+    p {
+      font-size: 23px;
+      line-height: 12px;
     }
-    h2 {
-        color: #965A00;
-        font-size: 48px;
-        font-weight: 600;
-        font-family: ArmAllegrou;
-        letter-spacing: 10px;
-    }
-`
-const SecondPagePartContext = styled.div`
-    div {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        img {
-            object-fit: cover;
-        }
-        h4 {
-            position: absolute;
-            font-size: 22px;
-        }
-    }
-`
-export { SecondPagePart, SecondPagePartContext }
+  }
+  .uniqueBorder {
+    border: 0;
+  }
+`;
+export { SecondPagePart, GridDiv };

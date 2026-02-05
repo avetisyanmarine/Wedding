@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const LastFooterPagePart = styled.div`
-    background: #965A00;
-    color: aliceblue;
+    color: #efefef;
+    text-align: center;
 `
 const LastFooterPagePartContext = styled.div`
     font-size: 18px;
@@ -11,7 +11,7 @@ const LastFooterPagePartContext = styled.div`
     }
     div {
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         gap: 10px;
         div {
@@ -26,9 +26,8 @@ const LastFooterPagePartContext = styled.div`
         }
    }
      a {
-        color: white;
+        font-family: ArmenianDecorativeU-Italic;
         text-decoration: none;
-        font-weight: bold;
         cursor: pointer;
         transition: 0.2s;
     }

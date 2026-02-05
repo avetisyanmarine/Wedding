@@ -25,11 +25,14 @@ const FirstPagePartContext = styled.div`
         text-align: center;
         font-family: ArmAllegrou;
         line-height: 35px;
-        color: aliceblue;
         letter-spacing: 5px;
     }
+    img {
+        width: 137px;
+        height: 97px;
+    }
     .uniqueH2 {
-        font-family: DavelAghvor;
+        font-family: ArmenianDecorativeU-Italic;
         margin-bottom: 28px;
     }
     .uniqueDiv {
@@ -48,24 +51,4 @@ const FirstPagePartContext = styled.div`
         }
     }
 `
-const GridDiv = styled(Flexible)`
-    div {
-        flex-direction: column;
-        text-align: center;
-        border-right: 2px solid #965A00;
-        padding: 16px 24px;
-        h2 {
-            font-size: 40px;
-            font-family: DavelAghvor;
-        }
-        p {
-            color: aliceblue;
-            font-size: 22px;
-            line-height: 8px;
-        }
-    }
-    .uniqueBorder {
-        border: 0;
-    }
-`
-export { FirstPagePart, FirstPagePartContext, GridDiv }
+export { FirstPagePart, FirstPagePartContext }
