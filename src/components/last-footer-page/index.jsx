@@ -67,7 +67,7 @@ export const LastFooterPage = () => {
               href="https://www.instagram.com/avetisyaan.m/"
             >
               avetisyaan.m
-            </a>{" "}
+            </a>
             կողմից
           </Flexible>
         </LastFooterPagePartContext>
