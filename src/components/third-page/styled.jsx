@@ -16,7 +16,7 @@ const ThirdPagePartMini = styled.div`
   h3 {
     letter-spacing: 9px;
     font-weight: 200;
-    font-size: 19px;
+    font-size: 18px;
     margin: 30px 0;
     &:nth-child(1) {
       margin-top: 100px;

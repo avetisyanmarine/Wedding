@@ -2,6 +2,7 @@ import { SecondPagePart, GridDiv } from "./styled";
 import { Container, Flexible } from "../../GlobalStyle";
 import { useEffect, useState } from "react";
 import Photo2 from "../../assets/image/photo2.jpg";
+import { ThirdPagePartCalendar } from "../third-page/styled";
 
 export const SecondPage = () => {
   const weddingDate = new Date(2026, 2, 1, 0, 0, 0);
@@ -33,31 +34,65 @@ export const SecondPage = () => {
   }, []);
 
   const formatNumber = (num) => String(num).padStart(2, "0");
-  
+
   return (
     <SecondPagePart className="my-10">
       <Container>
         <div>
-          <h2 className="mb-10" data-aos="zoom-in" data-aos-offset="400">Միջոցառմանը մնաց</h2>
+          <h2 className="mb-10" data-aos="zoom-in" data-aos-offset="400">
+            Միջոցառմանը մնաց
+          </h2>
           <GridDiv>
-            <Flexible data-aos="flip-up" data-aos-duration="900" data-aos-delay="300">
+            <Flexible
+              data-aos="flip-up"
+              data-aos-duration="900"
+              data-aos-delay="300"
+            >
               <h2>{formatNumber(timeLeft.days)}</h2>
               <p>Օր</p>
             </Flexible>
-            <Flexible data-aos="flip-up" data-aos-duration="900" data-aos-delay="450">
+            <Flexible
+              data-aos="flip-up"
+              data-aos-duration="900"
+              data-aos-delay="450"
+            >
               <h2>{formatNumber(timeLeft.hours)}</h2>
               <p>Ժամ</p>
             </Flexible>
-            <Flexible data-aos="flip-up" data-aos-duration="900" data-aos-delay="600">
+            <Flexible
+              data-aos="flip-up"
+              data-aos-duration="900"
+              data-aos-delay="600"
+            >
               <h2>{formatNumber(timeLeft.minutes)}</h2>
               <p>Րոպե</p>
             </Flexible>
-            <Flexible className="uniqueBorder" data-aos="flip-up" data-aos-duration="900" data-aos-delay="750">
+            <Flexible
+              className="uniqueBorder"
+              data-aos="flip-up"
+              data-aos-duration="900"
+              data-aos-delay="750"
+            >
               <h2>{formatNumber(timeLeft.seconds)}</h2>
               <p>Վրկ</p>
             </Flexible>
           </GridDiv>
         </div>
+        <ThirdPagePartCalendar
+          data-aos="fade-up"
+          data-aos-offset="400"
+          data-aos-duration="600"
+          data-aos-delay="300"
+          className="mt-15"
+        >
+          {[...Array(35)].map((_, i) =>
+            i > 1 && i <= 32 ? (
+              <div className={i - 1 == 1 ? "special" : ""}>{i - 1}</div>
+            ) : (
+              <div></div>
+            ),
+          )}
+        </ThirdPagePartCalendar>
       </Container>
       <div className="mt-10 mb-15">
         <h2

@@ -51,15 +51,6 @@ export const ThirdPage = () => {
           <h3>Սիրով սպասում ենք</h3>
           <hr />
         </ThirdPagePartMini>
-        {/* <ThirdPagePartCalendar>
-          {[...Array(35)].map((_, i) =>
-            i > 1 && i <= 31 ? (
-              <div className={i - 1 == 19 ? "special" : ""}>{i - 1}</div>
-            ) : (
-              <div></div>
-            ),
-          )}
-        </ThirdPagePartCalendar> */}
       </Container>
     </ThirdPagePart>
   );
