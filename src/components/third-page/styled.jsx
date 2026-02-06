@@ -31,28 +31,30 @@ const ThirdPagePartMini = styled.div`
     border-radius: 50px;
   }
 `;
-const ThirdPagePartCalendar = styled(Flexible)`
-  flex-wrap: wrap;
-  margin-top: 20px;
+const ThirdPagePartCalendar = styled.div`
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   gap: 10px;
+  margin-top: 20px;
   div {
     text-align: center;
     font-size: 27px;
-    flex: 1 0 calc(100% / 7 - 10px);
   }
   .special {
     position: relative;
+    font-weight: bold;
     &::after {
       content: "";
-      width: 60px;
-      height: 60px;
+      width: 52px;
+      height: 47px;
       display: block;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("/heart.svg");
+      background-image: url("/heart.png");
       background-size: cover;
+      z-index: -1;
     }
   }
 `;
