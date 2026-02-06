@@ -7,8 +7,8 @@ export const MusicPage = () => {
   const audioRef = useRef(null);
 
   const handleClick = () => {
-      audioRef.current.currentTime = 0.43;
-      audioRef.current.play();
+    audioRef.current.currentTime = 0.43;
+    audioRef.current.play();
   };
 
   return (
@@ -16,7 +16,7 @@ export const MusicPage = () => {
       <div>
         <img className="w-[20px]" loading="lazy" src={Music} />
       </div>
-      <audio ref={audioRef} src={Song} />
+      <audio ref={audioRef} src={Song} autoPlay />
     </MusicPagePart>
   );
 };
