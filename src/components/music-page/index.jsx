@@ -1,5 +1,5 @@
 import { MusicPagePart } from "./styled";
-import Play from "../../assets/vectors/play.svg";
+import Music from "../../assets/vectors/music.png";
 import Song from "../../assets/audio/song.mp3";
 import { useRef, useState } from "react";
 
@@ -14,7 +14,7 @@ export const MusicPage = () => {
   return (
     <MusicPagePart onClick={handleClick}>
       <div>
-        <img loading="lazy" src={Play} />
+        <img className="w-[20px]" loading="lazy" src={Music} />
       </div>
       <audio ref={audioRef} src={Song} />
     </MusicPagePart>

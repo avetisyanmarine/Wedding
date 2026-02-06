@@ -33,6 +33,7 @@ const ThirdPagePartMini = styled.div`
 `;
 const ThirdPagePartCalendar = styled(Flexible)`
   flex-wrap: wrap;
+  margin-top: 20px;
   gap: 10px;
   div {
     text-align: center;

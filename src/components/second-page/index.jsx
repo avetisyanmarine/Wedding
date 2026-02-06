@@ -78,6 +78,9 @@ export const SecondPage = () => {
             </Flexible>
           </GridDiv>
         </div>
+          <h2 className="mt-10" data-aos="zoom-in" data-aos-offset="400">
+            Մարտ
+          </h2>
         <ThirdPagePartCalendar
           data-aos="fade-up"
           data-aos-offset="400"
@@ -85,6 +88,9 @@ export const SecondPage = () => {
           data-aos-delay="300"
           className="mt-15"
         >
+          {["Ուրբ", "Շբթ", "Կիր", "Երկ", "Երք", "Չրք", "Հնգ"].map((day) => (
+            <div className="font-bold text-center py-2 mb-3" style={{fontSize: "16px"}}>{day}</div>
+          ))}
           {[...Array(35)].map((_, i) =>
             i > 1 && i <= 32 ? (
               <div className={i - 1 == 1 ? "special" : ""}>{i - 1}</div>

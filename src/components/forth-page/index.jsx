@@ -38,10 +38,10 @@ export const ForthPage = () => {
             fontWeight: "600", // սա font-bold-ն է
             marginTop: "2.5rem", // սա mt-10-ն է
             position: "absolute", // սա absolute-ն է
-            top: "-85px", // սա top-3-ն է
-            left: "50%", // սա left-1/2-ն է
+            top: "-36px",
+            left: "50%",
             transform: "translateX(-50%)", // սա -translate-x-1/2-ն է
-            }}
+          }}
         >
           Save the Date
         </h1>
