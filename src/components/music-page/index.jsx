@@ -29,7 +29,7 @@ export const MusicPage = () => {
   return (
     <MusicPagePart onClick={handleClick}>
       <img loading="lazy" src={Music} alt="music" />
-      <audio ref={audioRef} src={Song} autoPlay />
+      <audio ref={audioRef} src={Song} loop />
       {showTip && (
         <div
           onClick={handleClick}
