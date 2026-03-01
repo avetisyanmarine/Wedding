@@ -66,7 +66,7 @@ export const LastFooterPage = () => {
               className="underline text-[#1e1e1e]"
               href="https://www.instagram.com/webinvite.am/"
             >
-              WEB INVITE.AM
+              WEB INVITE
             </a>
             կողմից
           </Flexible>
