@@ -64,9 +64,9 @@ export const LastFooterPage = () => {
             </svg>
             <a
               className="underline text-[#1e1e1e]"
-              href="https://www.instagram.com/avetisyaan.m/"
+              href="https://www.instagram.com/webinvite.am/"
             >
-              avetisyaan.m
+              WEB INVITE.AM
             </a>
             կողմից
           </Flexible>
