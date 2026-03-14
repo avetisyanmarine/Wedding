@@ -17,7 +17,7 @@ export const FirstPage = () => {
             className="mt-5 text-[#efefef]"
           >
             <h2>Հարսանյաց</h2>
-            <h2 className="mt-2">հրվեր</h2>
+            <h2 className="mt-2">հրավեր</h2>
           </div>
           <Flexible>
             <h1

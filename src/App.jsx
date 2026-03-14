@@ -18,22 +18,21 @@ function App() {
 
   return (
     <>
-      <Helmet>
-        <title>Մեր Միջոցառումը</title>
-        <meta property="og:title" content="Մեր Միջոցառումը" />
+        <Helmet>
+        <title>Հարսանյաց հրավեր</title>
+        <meta property="og:title" content="Հարսանյաց հրավեր" />
         <meta
           property="og:description"
           content="Դու հրավիրված ես մեր միջոցառմանը"
         />
         <meta property="og:image" content="/wedding.jpg" />
-        <meta property="og:url" content="https://example.com" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Մեր Միջոցառումը" />
+        <meta name="twitter:title" content="Հարսանյաց հրավեր" />
         <meta
           name="twitter:description"
           content="Դու հրավիրված ես մեր միջոցառմանը"
         />
-        <meta name="twitter:image" content="https://example.com/invite.jpg" />
+        <meta name="twitter:image" content="/wedding.jpg" />
       </Helmet>
 
       <MusicPage />
