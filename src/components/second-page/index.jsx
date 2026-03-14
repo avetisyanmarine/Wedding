@@ -2,6 +2,7 @@ import { SecondPagePart, GridDiv } from "./styled";
 import { Container, Flexible } from "../../GlobalStyle";
 import { useEffect, useState } from "react";
 import Photo2 from "../../assets/image/examp.jpg";
+import Photo5 from "../../assets/image/photo5.jpg";
 import { ThirdPagePartCalendar } from "../third-page/styled";
 
 export const SecondPage = () => {
@@ -105,6 +106,9 @@ export const SecondPage = () => {
           )}
         </ThirdPagePartCalendar>
       </Container>
+
+      <img src={Photo5} alt="Wedding Photo" className="grayscale" />
+
       <div className="mt-10 mb-15">
         <h2
           className="mb-10"
@@ -119,10 +123,7 @@ export const SecondPage = () => {
           </p>
         </Flexible>
       </div>
-      <img
-        src={Photo2}
-        className="w-full grayscale"
-      />
+      <img src={Photo2} className="w-full grayscale" />
     </SecondPagePart>
   );
 };
