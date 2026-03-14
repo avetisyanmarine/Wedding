@@ -125,7 +125,7 @@ const AttendanceGuests = () => {
         </p>
       </div>
 
-      {/* Alert Messages */}
+      {/* Alert Messages  094875372*/}
       {message.text && (
         <div
           className={`mb-5 sm:mb-6 md:mb-8 p-3 sm:p-4 md:p-5 rounded-lg sm:rounded-xl flex items-start gap-3 sm:gap-4 animate-in fade-in slide-in-from-top-2 duration-300 text-sm sm:text-base ${

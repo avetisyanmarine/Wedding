@@ -10,7 +10,6 @@ import "aos/dist/aos.css";
 import { BackToTop } from "./components/top-button";
 import { Helmet } from "react-helmet";
 import AttendanceGuests from "./components/AttendanceGuests";
-// import inviteImage from "public.";
 
 function App() {
   useEffect(() => {
@@ -26,17 +25,14 @@ function App() {
           property="og:description"
           content="Դու հրավիրված ես մեր միջոցառմանը"
         />
-        <meta
-          property="og:image"
-          content="/wedding.jpg"
-        />
+        <meta property="og:image" content="./assets/image/wedding.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Հարսանյաց հրավեր" />
         <meta
           name="twitter:description"
           content="Դու հրավիրված ես մեր միջոցառմանը"
         />
-        <meta name="twitter:image" content="/wedding.jpg" />
+        <meta name="twitter:image" content="./assets/image/wedding.jpg" />
       </Helmet>
 
       <MusicPage />
