@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { BackToTop } from "./components/top-button";
 import { Helmet } from "react-helmet";
+// import inviteImage from "public.";
 
 function App() {
   useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
           property="og:description"
           content="Դու հրավիրված ես մեր միջոցառմանը"
         />
-        <meta property="og:image" content="https://example.com/invite.jpg" />{" "}
+        <meta property="og:image" content="/wedding.jpg" />
         <meta property="og:url" content="https://example.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Մեր Միջոցառումը" />
