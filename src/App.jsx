@@ -28,7 +28,7 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://andranik-lilit.vercel.app/wedding.jpg"
+          content="/wedding.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Հարսանյաց հրավեր" />

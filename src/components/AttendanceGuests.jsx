@@ -5,7 +5,7 @@ const AttendanceGuests = () => {
     fullName: "",
     familySide: null,
     attending: null,
-    guestCount: 0,
+    guestCount: null,
     comment: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -258,9 +258,7 @@ const AttendanceGuests = () => {
                 name="guestCount"
                 value={formData.guestCount}
                 onChange={handleInputChange}
-                min="0"
                 max="20"
-                placeholder="0"
                 className="w-full px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-3.5 text-sm sm:text-base text-gray-800 placeholder-gray-400 bg-white border-2 border-gray-200 rounded-lg sm:rounded-xl transition-all duration-300 focus:outline-none focus:border-gray-800 focus:ring-4 focus:ring-gray-100 group-hover:border-gray-300"
               />
             </div>
