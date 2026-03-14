@@ -8,26 +8,6 @@ export const LastFooterPage = () => {
     <LastFooterPagePart className="bg-[#1e1e1e] rounded-tl-[105px] mt-10">
       <Container>
         <LastFooterPagePartContext>
-          <div>
-            <div>
-              {/* <img loading="lazy" src={Insta} /> */}
-              <div>
-                <p>Փեսա</p>
-                <p>Հարս</p>
-              </div>
-            </div>
-            <div>
-              <img loading="lazy" src={PhoneSvg} />
-              <div>
-                <p>
-                  <a href="tel:043090996"> 043-43-43-43</a>
-                </p>
-                <p>
-                  <a href="tel:094104015"> 077-77-77-77</a>
-                </p>
-              </div>
-            </div>
-          </div>
           <p>Պատրաստվել է</p>
           <Flexible className="items-center justify-center gap-2 mt-4">
             <svg
