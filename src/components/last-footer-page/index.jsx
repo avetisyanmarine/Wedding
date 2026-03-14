@@ -20,10 +20,10 @@ export const LastFooterPage = () => {
               <img loading="lazy" src={PhoneSvg} />
               <div>
                 <p>
-                  <a href="tel:043090996"> 043-09-09-96</a>
+                  <a href="tel:043090996"> 043-43-43-43</a>
                 </p>
                 <p>
-                  <a href="tel:094104015"> 094-10-40-15</a>
+                  <a href="tel:094104015"> 077-77-77-77</a>
                 </p>
               </div>
             </div>

@@ -8,6 +8,7 @@ import { Container } from "../../GlobalStyle";
 import Haverjutyun from "../../assets/image/haverjutyun.png";
 import Church from "../../assets/image/church.png";
 import Kenac from "../../assets/image/kenac.png";
+import Photo4 from "../../assets/image/photo4.jpg";
 import { ThirdPageBlock } from "./third-page-block";
 
 export const ThirdPage = () => {
@@ -19,37 +20,38 @@ export const ThirdPage = () => {
           <ThirdPageBlock
             imageSize={0}
             ImageSrc={null}
-            number={"13:00"}
+            number={"11:00"}
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
-            smallText="գ․ Մուսալեռ Տիգրան Մեծ 19/2"
+            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
           />
           <ThirdPageBlock
             uniqueMargin={50}
             imageSize={147}
             ImageSrc={Haverjutyun}
-            number={"13:30"}
+            number={"12:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
-            smallText="ք․ Էջմիածին, Չարենց 4/37"
+            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
           />
           <ThirdPageBlock
             imageSize={114}
             ImageSrc={Church}
-            number={"14:30"}
+            number={"14:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Սուրբ Գայանե եկեղեցի"
+            smallText="Սուրբ Հռիփսիմե եկեղեցի"
           />
           <ThirdPageBlock
             line={true}
             ImageSrc={Kenac}
             imageSize={159}
-            number={"17:30"}
+            number={"17:00"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Նոր Դվին Ռեստորան"
+            smallText="Հրաշք Այգի ռեստորան"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>
           <h3>Սիրով սպասում ենք</h3>
           <hr />
+          <img src={Photo4} className="mt-10 rounded-[16px] grayscale" alt="" />
         </ThirdPagePartMini>
       </Container>
     </ThirdPagePart>

@@ -1,9 +1,9 @@
 import { Container, Flexible } from "../../GlobalStyle";
 import { ForthPageBlock } from "./fortg-page-block";
 import { ForthPagePart, ForthPagePartContext } from "./styled";
-import Church from "../../assets/image/gayane.jpg";
-import Restaurant from "../../assets/image/restaurant.jpg";
-import Photo3 from "../../assets/image/photo3.jpg";
+import Church from "../../assets/image/hripsime.jpg";
+import Restaurant from "../../assets/image/restoran.jpg";
+import Photo3 from "../../assets/image/photo1.jpg";
 import Bant from "../../assets/image/bant.png";
 
 export const ForthPage = () => {
@@ -13,13 +13,13 @@ export const ForthPage = () => {
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Սուրբ Գայանե եկեղեցի"}
-            mapSrc={"https://maps.app.goo.gl/VyLXsTENTBxsTU987"}
+            bigText={"Սուրբ Հռիփսիմե եկեղեցի"}
+            mapSrc={"https://maps.app.goo.gl/x2c2mZ1fV1ZK3eCi9"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Նոր Դվին Ռեստորանային Համալիր"}
-            mapSrc={"https://maps.app.goo.gl/35zzYY99W9wpDqpM7"}
+            bigText={"Հրաշք Այգի Ռեստորանային Համալիր"}
+            mapSrc={"https://maps.app.goo.gl/orRmVD8cSgt9QKoHA"}
           />
         </ForthPagePartContext>
       </Container>
@@ -27,7 +27,7 @@ export const ForthPage = () => {
         <img
           src={Photo3}
           alt="Restaurant"
-          className="w-full my-10 mt-23 grayscale contrast-125 brightness-105"
+          className="w-full my-10 mt-23 grayscale"
         />
         <h1
           style={{
@@ -38,7 +38,7 @@ export const ForthPage = () => {
             fontWeight: "600", // սա font-bold-ն է
             marginTop: "2.5rem", // սա mt-10-ն է
             position: "absolute", // սա absolute-ն է
-            top: "-36px",
+            top: "-80px",
             left: "50%",
             transform: "translateX(-50%)", // սա -translate-x-1/2-ն է
           }}
