@@ -38,7 +38,10 @@ const AttendanceGuests = () => {
     setMessage({ type: "", text: "" });
 
     if (!formData.fullName.trim()) {
-      setMessage({ type: "error", text: "Խնդրում ենք մուտքագրել ձեր ամբողջական անունն ու ազգանունը։" });
+      setMessage({
+        type: "error",
+        text: "Խնդրում ենք մուտքագրել ձեր ամբողջական անունն ու ազգանունը։",
+      });
       return;
     }
 
@@ -117,9 +120,7 @@ const AttendanceGuests = () => {
     <div className="mx-auto w-full max-w-3xl box-border overflow-hidden backdrop-blur-md rounded-2xl shadow-xl border-2 border-white/30 p-6 sm:p-8">
       {/* Header */}
       <div className="text-center mb-8">
-        <h3>
-          Հրավերի պատասխան
-        </h3>
+        <h3>Հրավերի պատասխան</h3>
         <p className="text-gray-400 mt-2">
           Խնդրում ենք հաստատել Ձեր մասնակցությունը
         </p>
@@ -190,7 +191,7 @@ const AttendanceGuests = () => {
                 onClick={() => handleFamilySideChange(option.value)}
                 className={`relative py-2.5 sm:py-3 md:py-4 px-3 sm:px-4 md:px-5 rounded-lg sm:rounded-xl font-semibold transition-all duration-300 text-xs sm:text-sm md:text-base flex items-center justify-center gap-2 sm:gap-3 whitespace-nowrap ${
                   formData.familySide === option.value
-                    ? "bg-gray-800 text-white shadow-lg shadow-gray-500/40 scale-105"
+                    ? "bg-[#1e1e1e] text-white shadow-lg shadow-gray-500/40 scale-105"
                     : "bg-gray-100 text-gray-700 border-2 border-gray-300 hover:bg-gray-200 hover:border-gray-300 active:scale-95"
                 }`}
               >
@@ -224,7 +225,7 @@ const AttendanceGuests = () => {
                 onClick={() => handleAttendingChange(option.value)}
                 className={`relative py-2.5 sm:py-3 md:py-4 px-3 sm:px-4 md:px-5 rounded-lg sm:rounded-xl font-semibold transition-all duration-300 text-xs sm:text-sm md:text-base flex items-center justify-center gap-2 sm:gap-3 whitespace-nowrap ${
                   formData.attending === option.value
-                    ? "bg-gray-600 text-white shadow-lg shadow-gray-500/30 scale-105"
+                    ? "bg-[#1e1e1e] text-white shadow-lg shadow-gray-500/30 scale-105"
                     : "bg-gray-100 text-gray-700 border-2 border-transparent hover:bg-gray-200 hover:border-gray-300 active:scale-95"
                 }`}
               >
@@ -294,7 +295,7 @@ const AttendanceGuests = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-2.5 sm:py-3 md:py-4 px-4 sm:px-6 bg-gray-600 text-white font-bold text-sm sm:text-base md:text-lg rounded-lg sm:rounded-xl shadow-lg shadow-gray-500/30 transition-all duration-300 disabled:bg-gray-300 disabled:text-gray-600 disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100 disabled:shadow-none active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-100 flex items-center justify-center gap-2"
+          className="w-full py-2.5 sm:py-3 md:py-4 px-4 sm:px-6 bg-[#1e1e1e] text-white font-bold text-sm sm:text-base md:text-lg rounded-lg sm:rounded-xl shadow-lg shadow-gray-500/30 transition-all duration-300 disabled:bg-gray-300 disabled:text-gray-600 disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100 disabled:shadow-none active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-100 flex items-center justify-center gap-2"
         >
           {isSubmitting ? (
             <>
