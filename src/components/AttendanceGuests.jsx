@@ -95,7 +95,7 @@ const AttendanceGuests = () => {
         fullName: "",
         familySide: null,
         attending: null,
-        guestCount: 0,
+        guestCount: null,
         comment: "",
       });
       window.scrollTo({
