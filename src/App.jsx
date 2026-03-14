@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { BackToTop } from "./components/top-button";
 import { Helmet } from "react-helmet";
+import AttendanceGuests from "./components/AttendanceGuests";
 // import inviteImage from "public.";
 
 function App() {
@@ -18,14 +19,17 @@ function App() {
 
   return (
     <>
-        <Helmet>
+      <Helmet>
         <title>Հարսանյաց հրավեր</title>
         <meta property="og:title" content="Հարսանյաց հրավեր" />
         <meta
           property="og:description"
           content="Դու հրավիրված ես մեր միջոցառմանը"
         />
-        <meta property="og:image" content="https://andranik-lilit.vercel.app/wedding.jpg" />
+        <meta
+          property="og:image"
+          content="https://andranik-lilit.vercel.app/wedding.jpg"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Հարսանյաց հրավեր" />
         <meta
@@ -40,6 +44,7 @@ function App() {
       <SecondPage />
       <ThirdPage />
       <ForthPage />
+      <AttendanceGuests />
       <LastFooterPage />
       <BackToTop />
     </>
