@@ -38,6 +38,12 @@ export const ThirdPage = () => {
             smallText="Սուրբ Հռիփսիմե եկեղեցի"
           />
           <ThirdPageBlock
+            imageSize={0}
+            ImageSrc={null}
+            number={"16:00"}
+            bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
+          />
+          <ThirdPageBlock
             line={true}
             ImageSrc={Kenac}
             imageSize={159}
